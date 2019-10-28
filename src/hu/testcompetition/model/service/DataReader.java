@@ -1,10 +1,30 @@
 package hu.testcompetition.model.service;
 
-import hu.testcompetition.model.domain.CompetitionResult;
+import hu.testcompetition.model.domain.TestResult;
+import hu.testcompetition.model.domain.Validator;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public interface DataReader {
+public class DataReader {
 
-    List<CompetitionResult> getData(String input);
+    private DataParser dataParser;
+    private List<String> lines;
+
+    public DataReader(DataParser dataParser, FileDataReader fileDataReader) {
+        this.dataParser = dataParser;
+        this.lines = fileDataReader.read();
+    }
+
+    public Validator getValidator() {
+        return dataParser.createValidator(lines.get(0));
+
+    }
+
+    public List<TestResult> getTestResult() {
+        List<String> strings = new ArrayList<>(lines);
+        strings.remove(0);
+        return dataParser.createTestResults(strings);
+    }
+
 }
