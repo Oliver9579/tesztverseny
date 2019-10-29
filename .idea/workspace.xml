@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ea457ee-8fcd-4e2f-829b-dea9a06767d1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hu/testcompetition/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hu/testcompetition/controller/TestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/domain/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/service/DataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/service/Console.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/model/domain/CompetitionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/domain/TestResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/controller/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/controller/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/model/domain/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/domain/Validator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/model/service/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/service/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hu/testcompetition/model/service/FileDataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hu/testcompetition/model/service/FileDataReader.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +33,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\oliver\projects\tesztverseny" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -99,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572267081704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Task 1, 2.">
+      <created>1572271243150</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572271243150</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,7 +115,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -115,6 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="gitignore" />
+    <MESSAGE value="Task 1, 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 1, 2." />
   </component>
 </project>
