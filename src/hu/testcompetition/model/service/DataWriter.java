@@ -1,0 +1,23 @@
+package hu.testcompetition.model.service;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+public class DataWriter {
+
+    private final String fileName;
+
+    public DataWriter(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public void printAll(List<String> lines) {
+        try (PrintWriter pw = new PrintWriter(new FileWriter(fileName))) {
+            lines.forEach(i -> pw.println(i));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

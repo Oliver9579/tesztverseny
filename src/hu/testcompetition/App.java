@@ -3,20 +3,19 @@ package hu.testcompetition;
 import hu.testcompetition.controller.TestService;
 import hu.testcompetition.model.domain.TestResult;
 import hu.testcompetition.model.domain.Validator;
-import hu.testcompetition.model.service.Console;
-import hu.testcompetition.model.service.DataParser;
-import hu.testcompetition.model.service.DataReader;
-import hu.testcompetition.model.service.FileDataReader;
+import hu.testcompetition.model.service.*;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class App {
     private final TestService testService;
+    private final DataWriter dataWriter;
     private final Console console;
 
     App() {
         console = new Console(new Scanner(System.in));
+        dataWriter = new DataWriter("pontok.txt");
         DataParser dataParser = new DataParser();
         FileDataReader fileDataReader = new FileDataReader("valaszok.txt");
         DataReader dataReader = new DataReader(dataParser, fileDataReader);
@@ -40,5 +39,9 @@ public class App {
         System.out.print("5. feladat: A feladat sorszáma = ");
         int taskNumber = console.readInt();
         System.out.println(testService.getCorrectAnswerStatistic(taskNumber));
+        System.out.println("6. feladat: A versenyzők pontszámának meghatározása");
+        dataWriter.printAll(testService.getFinalScores());
+        System.out.println("7. feladat: A verseny legjobbjai?");
+        System.out.println(testService.getOrderedResults());
     }
 }
